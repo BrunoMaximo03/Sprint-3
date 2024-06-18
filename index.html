@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <form onsubmit="handleSubmit(event)">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="usuario">Usuário:</label><br>
+            <input type="text" id="usuario" name="usuario"><br>
+            <label for="senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
